@@ -1,29 +1,39 @@
-﻿<!-- nav -->
+﻿<!-- nav
 <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
     <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        <a class="nav-item nav-link" routerLink="/">Inicio</a>
+        <a class="nav-item nav-link" (click)="logout()">Cerrar sesi&oacute;n</a>
     </div>
+</nav> -->
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <h5 class="my-0 mr-md-auto font-weight-normal">
+        <span class="sr-only">BIT PROJECT - LOGIN</span>
+        <span class="img-fluid"><img src="src/img/logo-bit-project-white.png" height="50px" alt="BIT PROJECT" title="BIT PROJECT"></span>
+    </h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="nav-item nav-link" routerLink="/">Inicio</a>
+    </nav>
+    <a class="btn btn-primary" (click)="logout()">Cerrar sesi&oacute;n</a>
 </nav>
 
 <!-- main app container -->
 <div class="jumbotron">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6 offset-sm-3">
-                <alert></alert>
-                <router-outlet></router-outlet>
+        <div class="row justify-content-end">
+            <div class="col-sm-6">
+                <div class="box-form">
+                    <alert></alert>
+                    <router-outlet></router-outlet>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <!-- credits -->
-<div class="text-center">
-    <p>
-        <a href="http://jasonwatmore.com/post/2018/10/29/angular-7-user-registration-and-login-example-tutorial" target="_top">Angular 7 - User Registration and Login Example & Tutorial</a>
-    </p>
-    <p>
-        <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+<div class="footer text-center">
+   <p>
+        <a href="mailto:cmartinez@nexura.com" target="_top">2021 &copy; Copyright cmartinez</a>
     </p>
 </div>

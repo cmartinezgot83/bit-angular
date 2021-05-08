@@ -1,9 +1,9 @@
-﻿<h1>Hi {{currentUser.firstName}}!</h1>
-<p>You're logged in with Angular 7!!</p>
-<h3>All registered users:</h3>
+﻿<h1>Hola {{currentUser.firstName}}!</h1>
+<p>Ya est&aacute;s registrado en <strong>Bit Project!!</strong></p>
+<h3>Todos los usuarios registrados:</h3>
 <ul>
     <li *ngFor="let user of users">
         {{user.username}} ({{user.firstName}} {{user.lastName}})
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+        - <a (click)="deleteUser(user.id)" class="text-danger">Borrar</a>
     </li>
 </ul>
