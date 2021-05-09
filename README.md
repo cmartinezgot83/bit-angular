@@ -1,5 +1,6 @@
-# angular-7-registration-login-example
+# BIT PROJECT
 
-Angular 7 User Registration and Login Example with Webpack 4
+Carlos Andres Martinez Figueroa
+cmartinez@nexura.com
 
-Full tutorial with example available at http://jasonwatmore.com/post/2018/10/29/angular-7-user-registration-and-login-example-tutorial
+https://github.com/cmartinezgot83/bit-angular
